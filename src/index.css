@@ -1,0 +1,261 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root {
+  --bg-dark: #000000; /* Pure black background */
+  --bg-card: #000000; /* Changed to pure black instead of dark gray */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-color: #f97316; /* Orange */
+  --timeline-color: #f97316; /* Orange */
+  
+  /* Color variations for timeline years */
+  --year-color-1: #3b82f6; /* Blue */
+  --year-color-2: #ef4444; /* Red */
+  --year-color-3: #10b981; /* Green */
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+}
+
+.dark-card {
+  background-color: var(--bg-card);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+}
+
+/* Updated timeline styles for alternating layout */
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--timeline-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 45%;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item.left {
+  margin-right: auto;
+  padding-right: 30px;
+}
+
+.timeline-item.right {
+  margin-left: auto;
+  padding-left: 30px;
+}
+
+/* Original large timeline points */
+.timeline-point {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 30px;
+}
+
+.timeline-item.left .timeline-point {
+  right: -12px;
+  background: var(--timeline-color);
+}
+
+.timeline-item.right .timeline-point {
+  left: -12px;
+  background: var(--timeline-color);
+}
+
+/* NEW: Smaller timeline points */
+.timeline-point-small {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 30px;
+  background: var(--timeline-color);
+}
+
+.timeline-item.left .timeline-point-small {
+  right: -6px;
+}
+
+.timeline-item.right .timeline-point-small {
+  left: -6px;
+}
+
+.year-color-1 {
+  color: var(--year-color-1);
+}
+
+.year-color-2 {
+  color: var(--year-color-2);
+}
+
+.year-color-3 {
+  color: var(--year-color-3);
+}
+
+/* Mobile responsive adjustments for timeline */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+    padding-left: 30px;
+  }
+  
+  .timeline-item.left, 
+  .timeline-item.right {
+    margin-left: 50px;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 30px;
+  }
+  
+  .timeline-item.left .timeline-point, 
+  .timeline-item.right .timeline-point {
+    left: -12px;
+    right: auto;
+  }
+
+  .timeline-item.left .timeline-point-small, 
+  .timeline-item.right .timeline-point-small {
+    left: -6px;
+    right: auto;
+  }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modern intro section styles */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.intro-name {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.intro-accent {
+  color: #f97316; /* orange */
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(249, 115, 22, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+/* Simplified skills layout */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+.database-icon {
+  background-color: #2563eb;
+  color: white;
+}
+
+.service-list {
+  margin-top: 24px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
