@@ -1,5 +1,5 @@
 // src/App.js - Final version with all components
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // Import components
