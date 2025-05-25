@@ -1,14 +1,15 @@
 // src/pages/About.jsx
 import { Link } from 'react-router-dom';
+import profileImage from '../assets/images/pfpicture.jpg';
 
 const About = () => {
   // Personal information - customize this with your actual information
   const personalInfo = {
-    name: "Votre Nom",
+    name: "NGUYEN Thien Huy",
     title: "Développeur Full Stack",
     location: "Clermont-Ferrand, France",
     email: "ngthienhuy08@gmail.com",
-    introduction: "Étudiant en BUT Informatique passionné par le développement full-stack et la création d'applications robustes. J'apporte précision et innovation créative à chaque projet en combinant des technologies de pointe avec des expériences utilisateur intuitives.",
+    introduction: "Je suis un développeur d'applications et web actuellement en deuxième année de BUT Informatique. Mes atouts ? En plus de mes compétences en développement d'applications, je maîtrise également des technologies du web, ce qui me permet de travailler sur des projets full-stack. Grâce à mes années à l'université, j'ai acquis une solide compréhension des principes de programmation. Je recherche activement un stage de 8 semaines qui me permettra de valider mon année universitaire tout en mettant en pratique mes compétences dans un environnement professionnel",
     description: "Actuellement en formation BUT Informatique au Puy-en-Velay, je me spécialise dans le développement d'applications complètes et la conception de solutions techniques innovantes. Mon parcours m'a permis d'acquérir des compétences solides tant en développement qu'en gestion de projet, avec une sensibilité particulière pour l'accessibilité et le numérique responsable."
   };
   
@@ -92,8 +93,8 @@ const About = () => {
             <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
               <div className="md:w-1/3 flex justify-center">
                 <img 
-                  src="https://placehold.co/400x500/1a1a1a/f97316?text=Photo" 
-                  alt="Votre portrait" 
+                  src={profileImage} 
+                  alt="NGUYEN Thien Huy" 
                   className="rounded-lg shadow-lg w-full max-w-sm object-cover border border-gray-800"
                 />
               </div>
@@ -122,7 +123,7 @@ const About = () => {
                 
                 <div className="flex space-x-4">
                   <Link 
-                    to="/resume" 
+                    to="/cv" 
                     className="bg-primary-600 text-white py-2 px-6 rounded hover:bg-primary-700 transition duration-300"
                   >
                     Voir mon CV
@@ -256,7 +257,7 @@ const About = () => {
                 Explorez mes projets pour découvrir mon approche, ma méthodologie et mes compétences en action.
               </p>
               <Link 
-                to="/projects" 
+                to="/projets" 
                 className="bg-white text-primary-700 py-3 px-8 rounded-full font-medium hover:bg-gray-100 transition duration-300 inline-block"
               >
                 Voir mes projets
