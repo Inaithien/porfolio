@@ -9,119 +9,132 @@ const Resume = () => {
   // CV data - your real information
   const personalInfo = {
     name: "NGUYEN Thien Huy",
-    title: "Développeur en BUT Informatique",
-    subtitle: "En recherche de stage de 8-12 semaines",
+    title: "Développeur",
+    subtitle: "En recherche d'alternance - Rentrée 2026 (cycle ingénieur informatique)",
     email: "ngthienhuy08@gmail.com",
     phone: "07 67 69 06 10",
-    location: "63100 Clermont Ferrand",
+    location: "Clermont-Ferrand",
     github: "https://github.com/Inaithien",
-    about: "Je suis un développeur d'applications et web actuellement en stage chez Comme une Image où je développe une application thermale innovante multi-plateforme. En deuxième année de BUT Informatique, mes atouts incluent mes compétences en développement full-stack et ma maîtrise des technologies modernes comme Tauri, Rust et des frameworks personnalisés comme ATOME. Cette expérience me permet de travailler sur des projets complexes combinant Ruby, JavaScript et des solutions cross-platform. Grâce à mes années à l'université et mon expérience professionnelle, j'ai acquis une solide compréhension des principes de programmation avancée et des architectures multi-plateforme."
+    about: "Développeur issu d'un BUT Informatique, orienté back-end et données. Je conçois des back-ends structurés en couches avec API REST, et je maîtrise le SQL, de la modélisation des schémas à l'extraction, la transformation et l'agrégation de données sur plusieurs SGBD. J'accompagne systématiquement mon travail de tests, de contrôles et d'une documentation permettant à un tiers de le reprendre. Rigoureux et méthodique, j'aime analyser un problème pour en comprendre l'origine. Anglais professionnel B2 (IELTS). Je recherche une alternance de développeur back-end pour la rentrée 2026, dans le cadre d'un cycle ingénieur informatique."
   };
   
   const education = [
     {
-      degree: "BUT Informatique Graphique",
-      institution: "Université Clermont Auvergne",
-      location: "Clermont Ferrand",
+      degree: "BUT Informatique",
+      institution: "IUT du Puy-en-Velay, Université Clermont Auvergne",
+      location: "Le Puy-en-Velay",
       period: "2024 - 2026",
-      description: "Formation complète en informatique avec spécialisation en développement d'applications et graphisme. Compétences acquises en programmation, bases de données, conception logicielle, réseaux et systèmes.",
-      courses: ["Développement d'applications", "Programmation C#/.NET", "Développement web", "Bases de données", "Réseaux & Systèmes"]
+      description: "Formation complète en informatique orientée back-end et données : architecture en couches, API REST, modélisation et requêtage de bases de données, scripting.",
+      courses: ["API REST & architecture en couches", "Bases de données (SQL/NoSQL)", "Scripting Python/Bash", "Git & Docker"]
     },
     {
-      degree: "BTS SIO (Service Informatique Organisation)",
-      institution: "EAF Ecole Auvergne Formation",
-      location: "Clermont Ferrand",
+      degree: "BTS SIO option SLAM",
+      institution: "École Auvergne Formation",
+      location: "Clermont-Ferrand",
       period: "2022 - 2024",
-      description: "Formation spécialisée en services informatiques aux organisations avec focus sur le développement et l'administration système.",
-      courses: ["Administration Windows Server", "Configuration réseaux", "Développement web", "Gestion de projet"]
+      description: "Formation spécialisée en solutions logicielles et applications métiers (SLAM), avec un focus sur le développement et les bases de données.",
+      courses: ["Développement d'applications", "Bases de données", "Gestion de projet"]
+    },
+    {
+      degree: "Baccalauréat général",
+      institution: "Lycée Thu Duc",
+      location: "Hô-Chi-Minh-Ville, Vietnam",
+      period: "2016",
+      description: "Baccalauréat général obtenu au Vietnam.",
+      courses: []
     }
   ];
   
   const experience = [
     {
-      position: "Développeur Full Stack",
+      position: "Développeur full-stack",
+      company: "Aubière Ambulance",
+      location: "Stage de fin d'études",
+      period: "Mai - Août 2026",
+      description: "Développement complet d'un ERP métier (courses, plannings, facturation) en application web progressive.",
+      responsibilities: [
+        "Conception ERP : développement complet d'un ERP métier (courses, plannings, facturation)",
+        "Architecture & déploiement : front React, back Node.js/Express, base PostgreSQL, API REST",
+        "Conteneurisation Docker et reverse-proxy Nginx",
+        "Qualité : suite de tests automatisés et documentation technique complète (cahier des charges, procédures)"
+      ],
+      technologies: ["React", "Node.js/Express", "PostgreSQL", "Docker", "Nginx", "API REST"]
+    },
+    {
+      position: "Développeur application hybride",
       company: "Comme une Image",
-      location: "Stage",
-      period: "2024 - Présent",
-      description: "Stage de développement d'une application thermale multi-plateforme",
+      location: "Projet UCA",
+      period: "Mai - Juil. 2025",
+      description: "Développement d'un transpileur Ruby vers JavaScript au sein du framework Atome.",
       responsibilities: [
-        "Développement d'une application thermale compatible iOS, macOS, Linux, Windows et Android",
-        "Utilisation du framework personnalisé ATOME pour intégrer des librairies Ruby dans JavaScript",
-        "Implémentation avec Tauri pour l'application desktop cross-platform",
-        "Développement backend avec Rust et intégration JavaScript",
-        "Gestion de base de données avec Objection.js (ORM)",
-        "Création d'un script d'installation automatique pour simplifier le déploiement client",
-        "Développement d'une solution one-click pour l'installation complète"
+        "Transpileur Ruby → JavaScript : développement d'un parser convertissant la syntaxe Ruby en JavaScript",
+        "Architecture : ORM Objection.js pour compatibilité multi-BDD",
+        "Serveur local Fastify, versionnage via Git"
       ],
-      technologies: ["JavaScript", "Ruby", "Tauri", "Rust", "ATOME", "Objection.js"]
-    },
-    {
-      position: "Développeur application",
-      company: "Projet personnel",
-      location: "Clermont Ferrand",
-      period: "Novembre 2023 - Avril 2024",
-      description: "Création d'une application de gestion pour petite société",
-      responsibilities: [
-        "Conception et développement d'une application de gestion complète",
-        "Implémentation de l'architecture en 3 couches",
-        "Développement de l'interface utilisateur en C#",
-        "Gestion de base de données avec Microsoft SQL Server",
-        "Tests et déploiement de l'application"
-      ],
-      technologies: ["C#", "SQL Server", ".NET"]
-    },
-    {
-      position: "Développeur web",
-      company: "Uekani-art ancestral",
-      location: "Remote",
-      period: "Août 2023 - Novembre 2023",
-      description: "Création d'un site vitrine pour une start-up d'art pour promouvoir ses travaux et événements",
-      responsibilities: [
-        "Conception et développement du site vitrine",
-        "Promotion des travaux artistiques et événements",
-        "Maintenance et amélioration continue du site",
-        "Adaptation aux demandes spécifiques de la start-up",
-        "Optimisation pour le référencement et la performance"
-      ],
-      technologies: ["HTML", "CSS", "JavaScript", "GitHub"]
+      technologies: ["Ruby", "JavaScript", "Fastify", "Objection.js", "Git"]
     }
   ];
   
   const skills = {
     technical: [
-      { name: "C#/.NET", level: 90 },
-      { name: "HTML/CSS/JS", level: 85 },
-      { name: "Microsoft SQL Server", level: 80 },
-      { name: "PHP/Symfony", level: 75 },
-      { name: "React", level: 70 },
-      { name: "Node.js", level: 70 },
-      { name: "C++/Qt", level: 65 }
+      { name: "Node.js / Express", level: 85 },
+      { name: "SQL (PostgreSQL, MySQL, SQL Server, SQLite)", level: 85 },
+      { name: "Python / Java / C#", level: 75 },
+      { name: "PHP / Symfony 7", level: 70 },
+      { name: "C++", level: 80 },
+      { name: "API REST & architecture en couches", level: 85 },
+      { name: "Git / Docker", level: 75 }
+    ],
+    security: [
+      { name: "Sécurité applicative (OWASP Top 10, SQL Injection, XSS, CSRF)", level: 80 },
+      { name: "Architecture réseau (OSI, TCP/IP, VLANs, DMZ, IPSec)", level: 70 },
+      { name: "Authentification & contrôle d'accès (JWT, RBAC, bcrypt)", level: 85 },
+      { name: "Protocoles réseau (TCP/UDP, DNS, DHCP, HTTP/S, ARP)", level: 70 },
+      { name: "Administration Linux & Windows Server", level: 65 },
+      { name: "Conformité & réglementation (RGPD, CNIL, DPIA)", level: 70 }
+    ],
+    securityTags: [
+      "Audit OWASP",
+      "Hardening Docker/Nginx",
+      "Chiffrement TLS/SSL",
+      "Virtualisation VirtualBox",
+      "Gestion des incidents",
+      "Veille CVE/ANSSI"
+    ],
+    networkTags: [
+      "Routeurs & commutateurs",
+      "Topologies (étoile, maillée, anneau)",
+      "Segmentation VLAN",
+      "Pare-feu & DMZ",
+      "IPv4/IPv6",
+      "CSMA/CD & CSMA/CA"
     ],
     networks: [
-      "Configuration routeurs/switchs",
-      "Administration Windows Server",
-      "Wireshark",
-      "VirtualBox"
+      "Modélisation des schémas",
+      "Requêtage SQL & agrégation",
+      "Extraction & transformation de données",
+      "Contrôle d'intégrité",
+      "Scripting Python & Bash"
     ],
     tools: [
-      "JetBrains (PHP Storm)",
-      "Microsoft SQL Server",
-      "XAMPP (SQLite3, MySQL)",
-      "Framework (.NET, Qt, Express.js, Symfony, React)",
-      "Microsoft Office 365",
-      "GitHub"
+      "Node.js / Express",
+      "PostgreSQL, MySQL, SQL Server, SQLite, MongoDB",
+      "PHP / Symfony 7",
+      "Git / Docker",
+      "Tests & recette",
+      "Documentation & procédures"
     ],
     languages: [
-      { name: "Français", level: "Natif" },
+      { name: "Français", level: "Courant" },
       { name: "Anglais", level: "B2 IELTS" },
-      { name: "Vietnamien", level: "Natif" }
+      { name: "Vietnamien", level: "Langue maternelle" }
     ]
   };
   
   const certifications = [
     {
-      name: "IELTS (International English Language Testing System)",
-      issuer: "British Council",
+      name: "Anglais professionnel B2",
+      issuer: "IELTS",
       date: "Niveau B2",
       level: "B2"
     }
@@ -129,12 +142,16 @@ const Resume = () => {
   
   const interests = [
     {
-      title: "Footballeur passionné",
-      description: "J'ai participé au tournoi région du futsal à Lyon et actuellement je suis dans une équipe futsal Latino-Américano."
+      title: "Rigueur & détermination",
+      description: "Maintien d'un haut niveau de performance malgré 4h de trajet quotidien Clermont ↔ Le Puy pendant deux ans."
     },
     {
-      title: "Badminton amateur",
-      description: "Je joue au badminton le mardi et jeudi toutes les semaines."
+      title: "Sport & esprit d'équipe",
+      description: "Futsal en compétition départementale, badminton, natation."
+    },
+    {
+      title: "Engagement associatif",
+      description: "Membre actif de l'Union des Étudiants Vietnamiens de Clermont-Ferrand."
     }
   ];
 
@@ -151,7 +168,7 @@ const Resume = () => {
             </p>
             <div className="flex items-center space-x-4">
               <a 
-                href="/cv/NGUYEN DEV .pdf" 
+                href="/cv/NGUYENDEV.pdf" 
                 download="CV_NGUYEN_Thien_Huy.pdf"
                 className="bg-primary-600 text-white py-2 px-6 rounded-full flex items-center hover:bg-primary-700 transition duration-300"
               >
@@ -386,9 +403,60 @@ const Resume = () => {
                     </div>
                   </div>
                   
+                  {/* Security & Network Skills */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-bold mb-4 text-white">Sécurité & Réseaux</h4>
+                    <div className="space-y-4">
+                      {skills.security.map((skill, index) => (
+                        <div key={index}>
+                          <div className="flex justify-between mb-1">
+                            <span className="font-medium text-gray-300">{skill.name}</span>
+                            <span className="text-sm text-gray-400">{skill.level}%</span>
+                          </div>
+                          <div className="w-full bg-gray-700 rounded-full h-2">
+                            <div 
+                              className="bg-primary-600 h-2 rounded-full" 
+                              style={{ width: `${skill.level}%` }}
+                            ></div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Security Tags */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-bold mb-4 text-white">Sécurité</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {skills.securityTags.map((tag, index) => (
+                        <span 
+                          key={index} 
+                          className="bg-gray-700 text-blue-400 text-sm font-medium px-3 py-1 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Network Tags */}
+                  <div className="mb-8">
+                    <h4 className="text-xl font-bold mb-4 text-white">Réseaux</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {skills.networkTags.map((tag, index) => (
+                        <span 
+                          key={index} 
+                          className="bg-gray-700 text-blue-400 text-sm font-medium px-3 py-1 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  
                   {/* Networks & Systems */}
                   <div className="mb-8">
-                    <h4 className="text-xl font-bold mb-4 text-white">Réseaux & Systèmes</h4>
+                    <h4 className="text-xl font-bold mb-4 text-white">Données & Traitement</h4>
                     <div className="flex flex-wrap gap-2">
                       {skills.networks.map((skill, index) => (
                         <span 
@@ -474,7 +542,7 @@ const Resume = () => {
           <div className="mt-12 text-center">
             <h3 className="text-2xl font-bold mb-4">Intéressé par mon profil ?</h3>
             <p className="text-gray-300 mb-8">
-              N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de stage.
+              N'hésitez pas à me contacter pour discuter de vos projets ou opportunités d'alternance.
             </p>
             <Link 
               to="/contact" 

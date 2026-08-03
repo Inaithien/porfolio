@@ -3,83 +3,70 @@ import { Link } from 'react-router-dom';
 import profileImage from '../assets/images/pfpicture.jpg';
 
 const About = () => {
-  // Personal information - customize this with your actual information
+  // Personal information
   const personalInfo = {
     name: "NGUYEN Thien Huy",
-    title: "Développeur Full Stack",
+    title: "Développeur",
     location: "Clermont-Ferrand, France",
     email: "ngthienhuy08@gmail.com",
-    introduction: "Je suis un développeur d'applications et web actuellement en deuxième année de BUT Informatique. Mes atouts ? En plus de mes compétences en développement d'applications, je maîtrise également des technologies du web, ce qui me permet de travailler sur des projets full-stack. Grâce à mes années à l'université, j'ai acquis une solide compréhension des principes de programmation. Je recherche activement un stage de 8 semaines qui me permettra de valider mon année universitaire tout en mettant en pratique mes compétences dans un environnement professionnel",
-    description: "Actuellement en formation BUT Informatique au Puy-en-Velay, je me spécialise dans le développement d'applications complètes et la conception de solutions techniques innovantes. Mon parcours m'a permis d'acquérir des compétences solides tant en développement qu'en gestion de projet, avec une sensibilité particulière pour l'accessibilité et le numérique responsable."
+    introduction: "Développeur issu d'un BUT Informatique, orienté back-end et données. Je conçois des back-ends structurés en couches avec API REST, et je maîtrise le SQL, de la modélisation des schémas à l'extraction, la transformation et l'agrégation de données sur plusieurs SGBD. J'accompagne systématiquement mon travail de tests, de contrôles et d'une documentation permettant à un tiers de le reprendre. Rigoureux et méthodique, j'aime analyser un problème pour en comprendre l'origine.",
+    description: "Je suis actuellement en BUT Informatique à l'IUT du Puy-en-Velay (Université Clermont Auvergne) et je recherche une alternance de développeur back-end pour la rentrée 2026, dans le cadre d'un cycle ingénieur informatique. Anglais professionnel B2 (IELTS)."
   };
   
   // Educational journey
   const education = [
     {
-      period: "2024 - Présent",
+      period: "2024 - 2026",
       degree: "BUT Informatique",
-      institution: "Le Puy-en-Velay, France",
-      description: "Formation complète en informatique avec spécialisation en développement d'applications et technologies avancées. Cursus incluant le développement d'applications desktop et web, la conception et gestion de bases de données, l'algorithmique avancée, les mathématiques appliquées à l'informatique, et le développement web full-stack avec des frameworks modernes."
+      institution: "IUT du Puy-en-Velay, Université Clermont Auvergne",
+      description: "Formation complète en informatique avec spécialisation en développement d'applications, bases de données et technologies avancées. Cursus incluant la conception de back-ends en couches, l'API REST, la modélisation et le requêtage de bases de données, et le développement web full-stack."
     },
     {
       period: "2022 - 2024",
-      degree: "BTS SIO (Services Informatiques aux Organisations)",
-      institution: "Clermont-Ferrand, France",
-      description: "Formation spécialisée en développement et gestion des systèmes d'information couvrant le développement web et applications, la cybersécurité, les réseaux informatiques, et l'algorithmique. Acquisition d'une base solide en programmation et en architecture système."
+      degree: "BTS SIO option SLAM",
+      institution: "École Auvergne Formation, Clermont-Ferrand",
+      description: "Formation spécialisée en développement et gestion des systèmes d'information couvrant le développement web et applications, les bases de données, les réseaux informatiques et l'algorithmique."
     }
   ];
   
-  // Skills categorized - matching with Home page
+  // Skills categorized
   const skills = {
     technical: [
-      "JavaScript", "PHP", "C#", ".NET", "Node.js", "Ruby", "C++", 
-      "MySQL", "SQLite", "NoSQL", "Microsoft SQL Server", 
-      "Symfony", "Unity", "Tauri", "Rust", "Qt", "Git", "Objection.js"
+      "Node.js", "Express", "Python", "Java", "C#", "PHP", "Symfony 7",
+      "API REST", "PostgreSQL", "MySQL", "SQL Server", "SQLite", "MongoDB",
+      "Scripting Bash", "Git", "Docker"
     ],
     transversal: [
-      "Gestion de projet", "Analyse des besoins", "Documentation technique", 
-      "Architecture logicielle", "Tests logiciels", "Conception de bases de données",
-       "Développement Full Stack Applications", "Développement Full Stack Web"
+      "Modélisation des schémas", "Requêtage SQL & agrégation", "Extraction & transformation de données",
+      "Contrôle d'intégrité", "Tests & recette", "Documentation & procédures", "Méthode Agile"
     ],
     human: [
-      "Persévérance", "Assiduité", "Discipline", "Communication", "Autonomie", 
-      "Créativité", "Résolution de problèmes", "Travail en équipe", "Rigueur",
-      "Écoute", "Empathie", "Organisation", "Esprit d'analyse"
+      "Rigueur", "Méthode", "Détermination", "Autonomie", "Communication",
+      "Esprit d'analyse", "Travail en équipe", "Organisation"
     ]
   };
   
-  // Career goals - extended version
+  // Career goals
   const careerGoals = [
     {
+      title: "Recherche d'alternance - Rentrée 2026",
+      description: "Je recherche une alternance de développeur back-end pour la rentrée 2026, dans le cadre d'un cycle ingénieur informatique. Je souhaite continuer à me spécialiser dans la conception de back-ends robustes, la modélisation de bases de données et l'extraction/transformation de données, tout en découvrant les enjeux d'une entreprise sur la durée d'un cycle en alternance.",
+      actions: [
+        "Intégrer une entreprise proposant une alternance de développeur back-end pour septembre 2026",
+        "Poursuivre en cycle ingénieur informatique en parallèle de l'alternance",
+        "Approfondir l'architecture d'API REST et les bonnes pratiques de bases de données (PostgreSQL, MySQL, SQL Server, MongoDB)",
+        "Renforcer mes compétences en tests, documentation et Git/Docker",
+        "Continuer à pratiquer l'anglais professionnel (B2 IELTS)"
+      ]
+    },
+    {
       title: "Vision Professionnelle",
-      description: "Mon objectif est de devenir un développeur full-stack expert, capable de concevoir et développer des applications complètes de haute qualité. Je souhaite me spécialiser dans la création de solutions techniques innovantes qui allient performance, accessibilité et impact environnemental minimal. Mon ambition est d'intégrer une entreprise technologique dynamique où je pourrai contribuer à des projets stimulants tout en continuant à développer mon expertise technique et mes compétences en leadership.",
+      description: "Mon objectif est de devenir un développeur back-end expert, capable de concevoir des architectures de données robustes et des API REST fiables. Je souhaite allier rigueur technique et compréhension métier pour livrer des solutions bien testées, documentées et maintenables.",
       actions: [
-        "Approfondir ma maîtrise des technologies modernes (React, Vue.js, frameworks backend avancés)",
-        "Développer une expertise en architecture de systèmes distribués et microservices",
-        "Acquérir une expérience professionnelle concrète à travers des stages en entreprise et des projets collaboratifs",
-        "Me spécialiser dans l'accessibilité web (WCAG), l'éco-conception et le développement durable",
-        "Développer des compétences en DevOps et en déploiement d'applications (Docker, CI/CD)",
-        "Participer à des projets open source pour contribuer à la communauté développeur"
-      ]
-    },
-    {
-      title: "Objectifs à Court Terme",
-      description: "Dans les 2-3 prochaines années, je vise à consolider mes compétences techniques à travers des projets concrets et des expériences professionnelles enrichissantes. Je souhaite également développer ma capacité à gérer des projets de bout en bout et acquérir une vision business plus approfondie.",
-      actions: [
-        "Réaliser un stage en entreprise dans le développement d'applications métier",
-        "Contribuer à des projets étudiants ambitieux en équipe multidisciplinaire",
-        "Obtenir des certifications techniques reconnues (AWS, Azure, ou Google Cloud)",
-        "Développer un portfolio de projets personnels démontrant ma polyvalence technique"
-      ]
-    },
-    {
-      title: "Vision à Long Terme",
-      description: "À terme, j'aspire à évoluer vers des responsabilités de lead developer ou d'architecte logiciel, où je pourrai guider des équipes techniques et prendre des décisions stratégiques sur l'architecture des systèmes. Je souhaite également rester à la pointe des innovations technologiques et potentiellement créer ma propre entreprise spécialisée dans le développement de solutions durables.",
-      actions: [
-        "Développer des compétences en management et leadership technique",
-        "Me former aux nouvelles technologies émergentes (IA, blockchain, IoT)",
-        "Construire un réseau professionnel solide dans l'écosystème tech",
-        "Envisager une spécialisation en entrepreneuriat technologique"
+        "Approfondir ma maîtrise des architectures en couches et des API REST",
+        "Développer une expertise en modélisation et optimisation de bases de données",
+        "Acquérir une expérience professionnelle concrète en alternance",
+        "Développer des compétences DevOps (Git, Docker, CI/CD)"
       ]
     }
   ];

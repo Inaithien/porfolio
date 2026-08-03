@@ -1,89 +1,203 @@
 // src/data/projectsData.js
-// Updated project data to match your Home page
+// Real projects from CV - replace `link` with the exact GitHub repo URL for each project
 const projectsData = [
   {
     id: 1,
-    title: "Application Thermale Multi-plateforme",
-    subtitle: "Stage chez Comme une Image - Développement Full Stack",
-    brief: "Application thermale innovante compatible iOS, macOS, Linux, Windows et Android, développée avec des technologies de pointe incluant le framework personnalisé ATOME.",
-    description: "Développement professionnel d'une application thermale révolutionnaire dans le cadre de mon stage chez Comme une Image. Ce projet ambitieux vise à créer une solution complète multi-plateforme utilisant des technologies de pointe pour optimiser la gestion thermale.",
-    context: "Dans le cadre de mon stage chez Comme une Image, j'ai été intégré à une équipe de développement pour créer une application thermale innovante. L'objectif était de développer une solution universelle fonctionnant sur toutes les plateformes principales.",
+    title: "Task Manager",
+    subtitle: "Application web full-stack de gestion de tâches",
+    brief: "Application web full-stack permettant de gérer tâches, sous-tâches et commentaires avec authentification sécurisée (JWT, bcrypt) et tableau de bord statistique.",
+    description: "Projet personnel visant à construire un gestionnaire de tâches complet avec une architecture back-end en couches (Controller → Service → Repository), une base de données MongoDB (Atlas) via Mongoose et un front-end vanilla HTML/CSS/JS.",
+    context: "Projet personnel développé pour approfondir l'architecture back-end en couches, la sécurisation des accès utilisateurs et la conception d'une API REST complète.",
     objectives: [
-      "Développer une application cross-platform (iOS, macOS, Linux, Windows, Android)",
-      "Intégrer le framework personnalisé ATOME pour fusionner Ruby et JavaScript",
-      "Utiliser Tauri pour l'application desktop performante",
-      "Optimiser avec Rust pour les performances critiques",
-      "Créer un système d'installation automatique one-click",
-      "Assurer une expérience utilisateur fluide sur toutes les plateformes"
+      "Concevoir un back-end structuré en couches (Controller → Service → Repository)",
+      "Mettre en place une authentification sécurisée par tokens JWT",
+      "Hacher les mots de passe avec bcrypt",
+      "Permettre la gestion complète des tâches, sous-tâches et commentaires",
+      "Ajouter recherche plein texte, filtres et corbeille avec restauration",
+      "Fournir un tableau de bord statistique"
     ],
     missions: [
-      "Analyse des besoins clients et conception de l'architecture multi-plateforme",
-      "Développement avec le framework ATOME (Ruby vers JavaScript)",
-      "Implémentation Tauri pour les applications desktop cross-platform",
-      "Optimisation backend avec Rust pour les performances",
-      "Intégration d'Objection.js pour la gestion de base de données",
-      "Création du script d'installation automatique",
-      "Tests sur toutes les plateformes cibles"
+      "Conception de l'architecture back-end en couches avec Node.js/Express",
+      "Modélisation des données avec MongoDB et Mongoose",
+      "Implémentation de l'inscription, connexion et sessions par JWT",
+      "Sécurisation des mots de passe avec bcrypt",
+      "Développement des fonctionnalités CRUD, recherche et filtres",
+      "Développement du front-end vanilla HTML/CSS/JS"
     ],
     steps: [
       {
-        name: "Architecture système",
-        description: "Conception de l'architecture multi-plateforme et choix des technologies"
+        name: "Architecture back-end",
+        description: "Mise en place de l'architecture en couches Controller → Service → Repository"
       },
       {
-        name: "Framework ATOME",
-        description: "Maîtrise et implémentation du framework personnalisé ATOME"
+        name: "Base de données",
+        description: "Modélisation MongoDB (Atlas) via Mongoose"
       },
       {
-        name: "Développement Tauri",
-        description: "Création des applications desktop avec Tauri et Rust"
+        name: "Authentification",
+        description: "Inscription, connexion, sessions JWT et hachage bcrypt"
       },
       {
-        name: "Intégration mobile",
-        description: "Adaptation pour iOS et Android"
+        name: "Fonctionnalités",
+        description: "CRUD tâches/sous-tâches/commentaires, assignation, recherche et filtres"
       },
       {
-        name: "Script d'installation",
-        description: "Développement du système d'installation one-click"
+        name: "Tableau de bord",
+        description: "Développement du tableau de bord statistique et de la corbeille avec restauration"
       }
     ],
     skills: {
-      technical: ["JavaScript", "Ruby", "Tauri", "Rust", "ATOME", "Objection.js", "Cross-platform Development"],
-      transversal: ["Architecture logicielle", "Gestion de projet", "Tests multi-plateforme", "Déploiement automatisé"],
-      human: ["Travail en équipe professionnelle", "Adaptabilité", "Apprentissage rapide", "Communication technique"]
+      technical: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt", "JavaScript"],
+      transversal: ["Architecture en couches", "Conception d'API REST", "Sécurité applicative"],
+      human: ["Autonomie", "Rigueur", "Organisation", "Résolution de problèmes"]
     },
-    tools: ["JavaScript", "Ruby", "Tauri", "Rust", "ATOME", "Objection.js", "GitHub"],
-    academicResources: ["Développement cross-platform", "Frameworks personnalisés", "Architecture moderne"],
-    conclusion: "Cette expérience professionnelle m'a permis de maîtriser des technologies de pointe comme ATOME et Tauri dans un contexte réel. Le développement d'une application multi-plateforme complexe m'a apporté une expertise précieuse en architecture logicielle moderne et en déploiement automatisé.",
-    digitalResponsibility: "Le projet privilégie l'efficacité énergétique avec Rust, utilise Tauri pour des applications légères, et intègre un système d'installation optimisé pour réduire l'empreinte carbone du déploiement.",
+    tools: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "bcrypt"],
+    academicResources: ["Architecture back-end en couches", "Sécurité des applications web", "Bases de données NoSQL"],
+    conclusion: "Ce projet personnel m'a permis de structurer un back-end complet en couches et de maîtriser l'authentification sécurisée par JWT et bcrypt, des compétences directement réutilisables en environnement professionnel.",
+    digitalResponsibility: "L'architecture en couches et la base MongoDB Atlas optimisent les requêtes, réduisant la charge serveur et la consommation de ressources.",
     images: [
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Multi-Platform+App",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=ATOME+Framework",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Tauri+Desktop",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=One-Click+Install"
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Task+Manager",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Dashboard+Stats",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Auth+JWT",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=CRUD+Taches"
     ],
-    link: "https://github.com/",
-    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Thermal+App+Pro"
+    link: "https://github.com/Inaithien/BBD",
+    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Task+Manager"
   },
   {
     id: 2,
-    title: "Site Web de Gestion Musicale",
-    subtitle: "Plateforme de gestion d'événements musicaux",
-    brief: "Site web permettant aux administrateurs de tout contrôler et aux utilisateurs de créer, s'inscrire ou supprimer des événements musicaux avec des artistes ou groupes de la base de données.",
-    description: "Développement d'une plateforme web complète pour la gestion d'événements musicaux, offrant des interfaces distinctes pour les administrateurs et les utilisateurs finaux.",
-    context: "Projet de développement d'une solution web pour faciliter l'organisation et la gestion d'événements musicaux dans un contexte universitaire ou associatif.",
+    title: "Application de Gestion",
+    subtitle: "Application C#/.NET avec architecture 3 couches",
+    brief: "Application de gestion développée en C#/.NET avec système de rôles (Admin, Manager, Employé), hachage des mots de passe et architecture 3 couches (DAO/DTO).",
+    description: "Projet individuel réalisé en semestre 4, mettant en œuvre une architecture 3 couches (DAO/DTO) avec une gestion fine des rôles utilisateurs et une base de données Microsoft SQL Server.",
+    context: "Projet individuel du BUT Informatique visant à concevoir une application de gestion respectant les bonnes pratiques d'architecture logicielle en environnement Microsoft.",
+    objectives: [
+      "Concevoir une architecture 3 couches (DAO/DTO)",
+      "Mettre en place un système de rôles (Admin, Manager, Employé)",
+      "Sécuriser les mots de passe par hachage",
+      "Gérer les données via Microsoft SQL Server"
+    ],
+    missions: [
+      "Conception de l'architecture 3 couches en C#/.NET",
+      "Implémentation du système de rôles et des permissions",
+      "Sécurisation des mots de passe",
+      "Conception et requêtage de la base SQL Server"
+    ],
+    steps: [
+      {
+        name: "Architecture DAO/DTO",
+        description: "Conception de l'architecture 3 couches en C#/.NET"
+      },
+      {
+        name: "Gestion des rôles",
+        description: "Implémentation du système de rôles Admin/Manager/Employé"
+      },
+      {
+        name: "Sécurité",
+        description: "Hachage des mots de passe"
+      },
+      {
+        name: "Base de données",
+        description: "Conception et intégration de Microsoft SQL Server"
+      }
+    ],
+    skills: {
+      technical: ["C#", ".NET", "Microsoft SQL Server", "Architecture 3 couches", "DAO/DTO"],
+      transversal: ["Architecture logicielle", "Gestion des accès", "Conception de bases de données"],
+      human: ["Rigueur", "Autonomie", "Esprit d'analyse"]
+    },
+    tools: ["C#", ".NET", "Microsoft SQL Server"],
+    academicResources: ["Architecture 3 couches", "Bases de données relationnelles", "Programmation orientée objet"],
+    conclusion: "Ce projet individuel m'a permis de consolider mes bases en architecture logicielle et en gestion des droits d'accès dans un contexte C#/.NET.",
+    digitalResponsibility: "L'architecture en couches facilite la maintenance et limite la duplication de code, réduisant les ressources nécessaires aux évolutions futures.",
+    images: [
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Gestion+Roles",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Architecture+3+Couches",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=SQL+Server",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=DAO+DTO"
+    ],
+    link: "https://github.com/Inaithien",
+    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Application+Gestion"
+  },
+  {
+    id: 3,
+    title: "Application Thermale Multi-plateforme",
+    subtitle: "Stage chez Comme une Image - Développeur application hybride (projet UCA)",
+    brief: "Application thermale développée au sein du framework Atome, avec un transpileur Ruby → JavaScript et une architecture multi-BDD via Objection.js.",
+    description: "Stage au sein de l'entreprise Comme une Image (projet UCA), portant sur le développement d'une application thermale hybride construite avec le framework Atome. Le cœur du projet consiste en un transpileur convertissant la syntaxe Ruby en JavaScript, permettant de faire fonctionner du code Ruby côté client.",
+    context: "Stage réalisé chez Comme une Image dans le cadre d'un projet en partenariat avec l'Université Clermont Auvergne (UCA), visant à développer une application thermale hybride en s'appuyant sur le framework maison Atome.",
+    objectives: [
+      "Développer un parser/transpileur convertissant la syntaxe Ruby en JavaScript",
+      "Intégrer ce transpileur au sein du framework Atome",
+      "Assurer la compatibilité multi-BDD via l'ORM Objection.js",
+      "Mettre en place un serveur local avec Fastify",
+      "Versionner le projet avec Git"
+    ],
+    missions: [
+      "Analyse de la syntaxe Ruby à convertir en JavaScript",
+      "Développement du parser/transpileur Ruby → JavaScript",
+      "Intégration au framework Atome",
+      "Mise en place de l'ORM Objection.js pour la compatibilité multi-BDD",
+      "Configuration du serveur local Fastify",
+      "Versionnage et suivi du projet avec Git"
+    ],
+    steps: [
+      {
+        name: "Analyse syntaxique Ruby",
+        description: "Étude de la syntaxe Ruby à transpiler et des équivalences en JavaScript"
+      },
+      {
+        name: "Développement du transpileur",
+        description: "Écriture du parser convertissant Ruby en JavaScript"
+      },
+      {
+        name: "Intégration Atome",
+        description: "Intégration du transpileur au sein du framework Atome"
+      },
+      {
+        name: "ORM multi-BDD",
+        description: "Mise en place d'Objection.js pour la compatibilité multi-bases de données"
+      },
+      {
+        name: "Serveur local",
+        description: "Configuration du serveur Fastify et tests d'intégration"
+      }
+    ],
+    skills: {
+      technical: ["Ruby", "JavaScript", "Fastify", "Objection.js", "Framework Atome", "Git"],
+      transversal: ["Transpilation de langages", "Architecture multi-BDD", "Travail en environnement professionnel"],
+      human: ["Adaptabilité", "Apprentissage rapide", "Communication technique", "Rigueur"]
+    },
+    tools: ["Ruby", "JavaScript", "Fastify", "Objection.js", "Git"],
+    academicResources: ["Transpilation de langages", "Frameworks maison", "Architecture multi-BDD"],
+    conclusion: "Ce stage chez Comme une Image m'a permis de travailler sur un projet technique exigeant, la conversion de Ruby vers JavaScript au sein du framework Atome, tout en développant mes compétences en environnement professionnel.",
+    digitalResponsibility: "Le transpileur permet de réutiliser du code Ruby existant plutôt que de le réécrire, limitant la duplication d'effort et de ressources de développement.",
+    images: [
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Atome+Framework",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Ruby+to+JS",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Objection.js",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Fastify+Server"
+    ],
+    link: "https://github.com/atomecorp/a",
+    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Application+Thermale"
+  },
+  {
+    id: 4,
+    title: "Gestion d'Événements Musicaux",
+    subtitle: "Plateforme web Symfony 7 / React",
+    brief: "Site web permettant aux administrateurs de tout gérer et aux utilisateurs de créer, s'inscrire ou supprimer des événements musicaux avec artistes ou groupes.",
+    description: "Développement d'une plateforme de gestion d'événements musicaux avec un back-end Symfony 7 et un front-end React, offrant des interfaces distinctes pour administrateurs et utilisateurs.",
+    context: "Projet réalisé dans un contexte de formation, visant à mettre en pratique le framework Symfony 7 combiné à React pour une application web complète.",
     objectives: [
       "Créer une interface d'administration complète",
       "Développer un système de gestion des utilisateurs",
       "Implémenter la gestion des artistes et groupes",
-      "Permettre la création et gestion d'événements",
-      "Assurer une base de données robuste avec SQLite"
+      "Permettre la création et gestion d'événements"
     ],
     missions: [
-      "Conception de l'architecture web avec Symfony",
-      "Développement du backend en PHP",
+      "Conception de l'architecture web avec Symfony 7",
+      "Développement du front-end avec React",
       "Création des interfaces utilisateur et administrateur",
-      "Implémentation de la base de données SQLite",
       "Tests et déploiement de la plateforme"
     ],
     steps: [
@@ -92,222 +206,96 @@ const projectsData = [
         description: "Définition de l'architecture et des fonctionnalités"
       },
       {
-        name: "Développement backend",
-        description: "Mise en place du framework Symfony et de l'API"
+        name: "Back-end Symfony 7",
+        description: "Mise en place du framework et de l'API"
       },
       {
-        name: "Interface administration",
-        description: "Création du panel d'administration"
+        name: "Front-end React",
+        description: "Développement de l'interface utilisateur et d'administration"
       },
       {
-        name: "Interface utilisateur",
-        description: "Développement de l'interface publique"
-      },
-      {
-        name: "Base de données",
-        description: "Configuration et optimisation SQLite"
+        name: "Tests & déploiement",
+        description: "Validation des fonctionnalités et mise en ligne"
       }
     ],
     skills: {
-      technical: ["PHP", "Symfony", "SQLite3", "JavaScript", "JetBrains (PhpStorm)", "HTML/CSS"],
-      transversal: ["Gestion de projet", "Conception web", "Gestion de base de données", "Documentation"],
-      human: ["Autonomie", "Organisation", "Créativité", "Attention aux détails", "Communication"]
+      technical: ["PHP", "Symfony 7", "React", "JavaScript", "HTML/CSS"],
+      transversal: ["Gestion de projet", "Conception web", "Documentation"],
+      human: ["Autonomie", "Organisation", "Communication"]
     },
-    tools: ["PHP", "Symfony", "SQLite3", "JetBrains (PhpStorm)", "JavaScript"],
-    academicResources: ["Développement web", "Framework Symfony", "Bases de données"],
-    conclusion: "Ce projet m'a permis de maîtriser le framework Symfony et d'approfondir mes compétences en développement web. La gestion complète d'une plateforme d'événements m'a appris l'importance de la conception d'architecture robuste.",
-    digitalResponsibility: "La plateforme utilise SQLite pour minimiser l'empreinte serveur et intègre des pratiques d'éco-conception web pour réduire la consommation de bande passante et d'énergie.",
+    tools: ["PHP", "Symfony 7", "React"],
+    academicResources: ["Développement web", "Framework Symfony", "Framework React"],
+    conclusion: "Ce projet m'a permis de combiner Symfony 7 côté back-end et React côté front-end pour livrer une plateforme complète de gestion d'événements.",
+    digitalResponsibility: "L'architecture découplée back/front permet d'optimiser le cache et de réduire la bande passante consommée par les utilisateurs.",
     images: [
       "https://placehold.co/800x600/1a1a1a/f97316?text=Admin+Panel",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=User+Interface",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=React+Frontend",
       "https://placehold.co/800x600/1a1a1a/f97316?text=Event+Management",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Database+Schema"
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Symfony+7"
     ],
-    link: "https://github.com/",
+    link: "https://github.com/Inaithien/Music",
     image: "https://placehold.co/600x400/1a1a1a/f97316?text=Gestion+Musicale"
   },
   {
-    id: 3,
-    title: "Jeu VR Paint Ball",
-    subtitle: "Jeu de devinettes en réalité virtuelle",
-    brief: "Jeu vidéo développé avec Unity utilisant la réalité virtuelle pour une expérience de paint ball immersive.",
-    description: "Création d'un jeu innovant combinant paint ball et mécaniques de devinettes dans un environnement de réalité virtuelle immersif développé avec Unity.",
-    context: "Projet de développement de jeu vidéo explorant les possibilités de la réalité virtuelle pour créer une expérience ludique unique mêlant action et réflexion.",
-    objectives: [
-      "Développer un jeu VR immersif avec Unity",
-      "Implémenter des mécaniques de paint ball",
-      "Intégrer des éléments de devinettes",
-      "Optimiser pour les casques VR",
-      "Créer une expérience utilisateur engageante"
-    ],
-    missions: [
-      "Conception du gameplay et des mécaniques",
-      "Développement du jeu avec Unity et C#",
-      "Intégration des fonctionnalités VR",
-      "Création des environnements 3D",
-      "Tests et optimisations VR"
-    ],
-    steps: [
-      {
-        name: "Game Design",
-        description: "Conception des mécaniques de jeu et du concept"
-      },
-      {
-        name: "Prototype VR",
-        description: "Développement du prototype de base en réalité virtuelle"
-      },
-      {
-        name: "Mécaniques Paint Ball",
-        description: "Implémentation du système de paint ball"
-      },
-      {
-        name: "Système de devinettes",
-        description: "Intégration des mécaniques de devinettes"
-      },
-      {
-        name: "Optimisation VR",
-        description: "Tests et optimisations pour l'expérience VR"
-      }
-    ],
-    skills: {
-      technical: ["Unity", "C#", "Réalité Virtuelle", "Développement 3D", "Game Design"],
-      transversal: ["Conception de jeu", "Expérience utilisateur", "Optimisation"],
-      human: ["Créativité", "Innovation", "Persévérance", "Vision spatiale"]
-    },
-    tools: ["Unity", "C#", "VR"],
-    academicResources: ["Développement de jeux", "Réalité virtuelle", "Programmation C#"],
-    conclusion: "Ce projet m'a initié au développement de jeux vidéo et à la réalité virtuelle. L'expérience de création d'un univers immersif et des défis techniques de la VR ont été particulièrement formatrices.",
-    digitalResponsibility: "Le développement du jeu intègre des pratiques d'optimisation pour réduire la charge GPU et la consommation énergétique, essentielles pour les applications VR.",
-    images: [
-      "https://placehold.co/800x600/1a1a1a/f97316?text=VR+Gameplay",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Paint+Ball+System",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Game+Environment",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=VR+Interface"
-    ],
-    link: "https://github.com/",
-    image: "https://placehold.co/600x400/1a1a1a/f97316?text=VR+Paint+Ball"
-  },
-  {
-    id: 4,
-    title: "Projet Vapeur",
-    subtitle: "Gestionnaire de liste de jeux vidéo",
-    brief: "Application de gestion d'une liste de jeux vidéo utilisant des technologies web modernes.",
-    description: "Développement d'une plateforme de gestion de collection de jeux vidéo permettant aux utilisateurs d'organiser, cataloguer et suivre leur bibliothèque de jeux.",
-    context: "Projet inspiré par les plateformes de gestion de jeux existantes, visant à créer une solution personnalisée avec des fonctionnalités avancées de catalogage.",
-    objectives: [
-      "Créer une interface de gestion intuitive",
-      "Implémenter un système de base de données NoSQL",
-      "Développer des API avec Node.js et Express.js",
-      "Intégrer des fonctionnalités de recherche avancée",
-      "Optimiser les performances avec PHP"
-    ],
-    missions: [
-      "Conception de l'architecture full-stack",
-      "Développement backend avec Node.js et Express.js",
-      "Intégration de la base de données NoSQL",
-      "Création de l'interface utilisateur",
-      "Optimisations et tests de performance"
-    ],
-    steps: [
-      {
-        name: "Architecture système",
-        description: "Définition de l'architecture full-stack et des technologies"
-      },
-      {
-        name: "API Development",
-        description: "Création des API avec Node.js et Express.js"
-      },
-      {
-        name: "Base de données NoSQL",
-        description: "Implémentation et optimisation de la base NoSQL"
-      },
-      {
-        name: "Interface utilisateur",
-        description: "Développement de l'interface de gestion"
-      },
-      {
-        name: "Optimisations PHP",
-        description: "Intégration et optimisations avec PHP"
-      }
-    ],
-    skills: {
-      technical: ["PHP", "Node.js", "Express.js", "NoSQL", "JavaScript", "API Development"],
-      transversal: ["Architecture full-stack", "Gestion de données", "Optimisation"],
-      human: ["Logique", "Méthodologie", "Autonomie", "Curiosité technique"]
-    },
-    tools: ["PHP", "Node.js", "Express.js", "NoSQL"],
-    academicResources: ["Développement full-stack", "Bases de données NoSQL", "API REST"],
-    conclusion: "Ce projet m'a permis d'explorer l'écosystème Node.js et les bases de données NoSQL. La combinaison avec PHP pour les optimisations a enrichi ma compréhension des architectures hybrides.",
-    digitalResponsibility: "L'utilisation de NoSQL optimise les performances et réduit la consommation de ressources serveur, tandis que l'architecture légère minimise l'empreinte énergétique.",
-    images: [
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Game+Library",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Search+Interface",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Database+Schema",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=API+Architecture"
-    ],
-    link: "https://github.com/",
-    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Projet+Vapeur"
-  },
-  {
     id: 5,
-    title: "Application de Gestion d'Entreprise",
-    subtitle: "Solution pour PME (hôtels, restaurants, magasins)",
-    brief: "Application permettant aux petites entreprises de gérer leurs activités : enregistrement des clients, paiements, disponibilité des tables/chambres, suivi des revenus et gestion complète de la base de données.",
-    description: "Développement d'une solution complète de gestion d'entreprise adaptée aux PME, intégrant tous les aspects opérationnels depuis la gestion clientèle jusqu'au suivi financier.",
-    context: "Face aux besoins spécifiques des petites entreprises du secteur de l'hôtellerie et de la restauration, ce projet vise à créer une solution tout-en-un accessible et efficace.",
+    title: "FlashnFriend",
+    subtitle: "Jeu Unity - Photographie, quêtes et NPC agressifs",
+    brief: "Jeu vidéo Unity où le joueur photographie des créatures pour gagner des points, échangés en boutique, tout en évitant de viser les NPC agressifs qui attaquent s'ils sont pris en photo.",
+    description: "FlashnFriend est un jeu de prise de photo développé sous Unity en C#. Le joueur explore des zones, capture des créatures avec son appareil photo pour gagner des points de trading, et complète des quêtes principales et secondaires pour débloquer de nouvelles zones. Certains NPC sont agressifs : les viser avec la caméra déclenche une attaque, obligeant le joueur à identifier les cibles sûres avant de photographier.",
+    context: "Projet personnel de développement de jeu vidéo, pensé et développé seul sous Unity, pour explorer la conception d'un système de gameplay original autour de la photographie plutôt que du combat direct.",
     objectives: [
-      "Développer une solution complète de gestion d'entreprise",
-      "Implémenter un système de gestion clientèle",
-      "Créer un module de gestion des paiements",
-      "Intégrer la gestion des disponibilités",
-      "Développer un tableau de bord analytique avec .NET"
+      "Concevoir une mécanique centrale de prise de photo comme cœur du gameplay",
+      "Mettre en place un système de points échangeables en boutique",
+      "Créer un système de quêtes principales et secondaires",
+      "Développer des NPC agressifs réagissant à la caméra du joueur",
+      "Débloquer des zones spécifiques via l'accomplissement de quêtes"
     ],
     missions: [
-      "Analyse des besoins spécifiques des PME",
-      "Développement de l'application en C# .NET",
-      "Conception et implémentation de la base Microsoft SQL Server",
-      "Création des modules de gestion intégrés",
-      "Tests et déploiement en environnement professionnel"
+      "Conception du game design autour de la photographie et de l'économie de points",
+      "Développement du système de boutique et de trading de points",
+      "Implémentation des quêtes et sous-quêtes avec déblocage de zones",
+      "Programmation de l'IA des NPC agressifs (détection de la caméra, déclenchement d'attaque)",
+      "Tests et équilibrage du gameplay"
     ],
     steps: [
       {
-        name: "Analyse métier",
-        description: "Étude des processus business des PME cibles"
+        name: "Game design",
+        description: "Conception du concept de jeu de photographie et de son économie de points"
       },
       {
-        name: "Architecture .NET",
-        description: "Conception de l'architecture avec C# et .NET"
+        name: "Système de caméra",
+        description: "Développement de la mécanique de prise de photo et de détection des cibles"
       },
       {
-        name: "Base de données",
-        description: "Implémentation avec Microsoft SQL Server"
+        name: "IA des NPC agressifs",
+        description: "Programmation du comportement d'attaque lorsque le joueur vise un NPC hostile avec la caméra"
       },
       {
-        name: "Modules métier",
-        description: "Développement des fonctionnalités spécialisées"
+        name: "Quêtes & sous-quêtes",
+        description: "Mise en place du système de quêtes et du déblocage de zones spécifiques"
       },
       {
-        name: "Dashboard analytics",
-        description: "Création du tableau de bord et rapports"
+        name: "Boutique & trading",
+        description: "Implémentation du système d'échange de points contre objets et améliorations"
       }
     ],
     skills: {
-      technical: ["C#", ".NET", "Microsoft SQL Server", "WPF", "Entity Framework"],
-      transversal: ["Analyse métier", "Gestion de projet", "Architecture logicielle", "Tests"],
-      human: ["Écoute client", "Rigueur", "Esprit d'analyse", "Sens du service"]
+      technical: ["Unity", "C#", "IA de NPC", "Systèmes de quêtes", "Game Design"],
+      transversal: ["Conception de gameplay", "Équilibrage économique du jeu", "Architecture de jeu vidéo"],
+      human: ["Créativité", "Autonomie", "Persévérance", "Esprit ludique"]
     },
-    tools: ["C#", ".NET", "Microsoft SQL Server"],
-    academicResources: ["Développement .NET", "Bases de données entreprise", "Gestion de projet"],
-    conclusion: "Ce projet ambitieux m'a permis de développer une vision complète du développement d'applications d'entreprise. L'expérience avec l'écosystème Microsoft et la compréhension des enjeux business ont été particulièrement enrichissantes.",
-    digitalResponsibility: "L'application intègre des pratiques d'efficacité énergétique et d'optimisation des requêtes SQL pour minimiser l'impact environnemental tout en maximisant les performances pour les PME.",
+    tools: ["Unity", "C#"],
+    academicResources: ["Développement de jeux vidéo", "Programmation orientée objet en C#", "Game design"],
+    conclusion: "FlashnFriend m'a permis d'explorer la conception d'un gameplay original centré sur la photographie plutôt que le combat, en développant seul l'IA des NPC, le système de quêtes et l'économie du jeu sous Unity.",
+    digitalResponsibility: "L'IA des NPC et les systèmes de détection de caméra ont été optimisés pour limiter les calculs par frame, réduisant la charge CPU/GPU et la consommation énergétique du jeu.",
     images: [
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Dashboard",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Client+Management",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Payment+System",
-      "https://placehold.co/800x600/1a1a1a/f97316?text=Analytics"
+      "https://placehold.co/800x600/1a1a1a/f97316?text=FlashnFriend",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Photo+Mechanic",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=NPC+Agressifs",
+      "https://placehold.co/800x600/1a1a1a/f97316?text=Quetes+%26+Boutique"
     ],
-    link: "https://github.com/",
-    image: "https://placehold.co/600x400/1a1a1a/f97316?text=Gestion+Entreprise"
+    link: "https://github.com/Inaithien/FlashnFriend/tree/main/Assets/Script",
+    image: "https://placehold.co/600x400/1a1a1a/f97316?text=FlashnFriend"
   }
 ];
 

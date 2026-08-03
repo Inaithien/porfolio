@@ -135,7 +135,7 @@ const Contact = () => {
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
                       <svg className="w-6 h-6 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1311.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                     </div>
@@ -254,7 +254,7 @@ const Contact = () => {
             <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-8 rounded-lg text-center">
               <h2 className="text-2xl font-bold mb-4 text-white">Discutons de votre projet</h2>
               <p className="text-lg mb-6 text-gray-100 max-w-3xl mx-auto">
-                Que vous ayez une idée de projet, une opportunité de stage, ou simplement l'envie d'échanger 
+                Que vous ayez une idée de projet, une opportunité d'alternance, ou simplement l'envie d'échanger 
                 sur le développement web et les technologies, je serais ravi de vous répondre rapidement.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
@@ -262,7 +262,7 @@ const Contact = () => {
                   Projets Web
                 </span>
                 <span className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium">
-                  Opportunités de Stage
+                  Opportunités d'Alternance
                 </span>
                 <span className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium">
                   Collaborations

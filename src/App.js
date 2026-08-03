@@ -32,7 +32,7 @@ function App() {
             <Route path="/projets" element={<Projects />} />
             <Route path="/projets/:id" element={<ProjectDetail />} />
             <Route path="/projects" element={<Navigate to="/projets" replace />} />
-            <Route path="/projects/:id" element={<Navigate to="/projets/:id" replace />} />
+            <Route path="/projects/:id" element={<ProjectDetail />} />
             
             {/* Digital Responsibility - French */}
             <Route path="/numerique-responsable" element={<DigitalResponsibility />} />

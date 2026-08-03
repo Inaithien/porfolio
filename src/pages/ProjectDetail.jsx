@@ -82,43 +82,43 @@ const ProjectDetail = () => {
             />
           </div>
           
-          {/* Project Description */}
+          {/* Situation */}
           <div className="mb-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <h3 className="text-2xl font-bold mb-6 text-primary-400">Situation</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-                <h3 className="text-2xl font-bold mb-4 text-primary-400">Contexte</h3>
+                <h4 className="text-lg font-semibold mb-3 text-white">Contexte</h4>
                 <p className="text-gray-300">{project.context}</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
-                <h3 className="text-2xl font-bold mb-4 text-primary-400">Description</h3>
+                <h4 className="text-lg font-semibold mb-3 text-white">Description</h4>
                 <p className="text-gray-300">{project.description}</p>
               </div>
             </div>
           </div>
           
-          {/* Objectives */}
-          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
-            <h3 className="text-2xl font-bold mb-4 text-primary-400">Objectifs</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-300">
-              {project.objectives?.map((objective, index) => (
-                <li key={index}>{objective}</li>
-              ))}
-            </ul>
-          </div>
-          
-          {/* Missions */}
-          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
-            <h3 className="text-2xl font-bold mb-4 text-primary-400">Missions</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-300">
-              {project.missions?.map((mission, index) => (
-                <li key={index}>{mission}</li>
-              ))}
-            </ul>
-          </div>
-          
-          {/* Project Steps */}
+          {/* Logic */}
           <div className="mb-10">
-            <h3 className="text-2xl font-bold mb-6 text-primary-400">Étapes du Projet</h3>
+            <h3 className="text-2xl font-bold mb-6 text-primary-400">Logique du Projet</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                <h4 className="text-lg font-semibold mb-3 text-white">Objectifs</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  {project.objectives?.map((objective, index) => (
+                    <li key={index}>{objective}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                <h4 className="text-lg font-semibold mb-3 text-white">Missions</h4>
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  {project.missions?.map((mission, index) => (
+                    <li key={index}>{mission}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <h4 className="text-lg font-semibold mb-4 text-white">Déroulement</h4>
             <div className="space-y-6">
               {project.steps?.map((step, index) => (
                 <div key={index} className="flex bg-gray-900 p-6 rounded-lg border border-gray-800">
@@ -136,24 +136,25 @@ const ProjectDetail = () => {
             </div>
           </div>
           
+          {/* Tech Stack */}
+          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <h3 className="text-2xl font-bold mb-4 text-primary-400">Stack Technique</h3>
+            <div className="flex flex-wrap gap-2">
+              {[...new Set([...(project.tools || []), ...(project.skills?.technical || [])])].map((tech, index) => (
+                <span 
+                  key={index} 
+                  className="bg-gray-700 text-primary-400 text-sm font-medium px-3 py-1 rounded-full"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+          
           {/* Skills */}
           <div className="mb-10">
             <h3 className="text-2xl font-bold mb-6 text-primary-400">Compétences Développées</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
-                <h4 className="text-xl font-bold mb-4 text-primary-600">Compétences Techniques</h4>
-                <ul className="space-y-2">
-                  {project.skills?.technical.map((skill, index) => (
-                    <li key={index} className="flex items-center">
-                      <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-gray-300">{skill}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
                 <h4 className="text-xl font-bold mb-4 text-primary-600">Compétences Transversales</h4>
                 <ul className="space-y-2">

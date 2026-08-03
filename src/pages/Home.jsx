@@ -2,54 +2,16 @@
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
 import { 
-  SiJavascript, SiPhp, SiSymfony, SiNodedotjs, 
-  SiDotnet, SiGit, SiMysql, SiSqlite, SiMongodb 
+  SiPhp, SiSymfony, SiNodedotjs, 
+  SiPython, SiPostgresql, SiMysql, SiSqlite, SiMongodb, SiGit, SiDocker
 } from 'react-icons/si';
+import projectsSourceData from '../data/projectsData';
 
 const Home = () => {
-  // Updated project data with your specific projects
-  const projectsData = [
-    {
-      id: 1,
-      title: "Application Thermale Universitaire",
-      subtitle: "Développement d'application en cours",
-      brief: "Application en développement pour la gestion thermale universitaire utilisant des technologies modernes.",
-      tools: ["Ruby", "JavaScript", "Tauri", "Rust", "Node.js", "GitHub", "Objection.js"],
-      details: "Projet en cours de développement..."
-    },
-    {
-      id: 2,
-      title: "Site Web de Gestion Musicale",
-      subtitle: "Plateforme de gestion d'événements musicaux",
-      brief: "Site web permettant aux administrateurs de tout contrôler et aux utilisateurs de créer, s'inscrire ou supprimer des événements musicaux avec des artistes ou groupes de la base de données.",
-      tools: ["PHP", "Symfony", "SQLite3"],
-      details: "Système complet de gestion d'événements musicaux avec gestion des artistes et des groupes."
-    },
-    {
-      id: 3,
-      title: "Jeu VR Paint Ball",
-      subtitle: "Jeu de devinettes en réalité virtuelle",
-      brief: "Jeu vidéo développé avec Unity utilisant la réalité virtuelle pour une expérience de paint ball immersive.",
-      tools: ["Unity", "C#", "VR"],
-      details: "Jeu de paint ball avec mécaniques de devinettes en réalité virtuelle."
-    },
-    {
-      id: 4,
-      title: "Projet Vapeur",
-      subtitle: "Gestionnaire de liste de jeux vidéo",
-      brief: "Application de gestion d'une liste de jeux vidéo utilisant des technologies web modernes.",
-      tools: ["PHP", "Node.js", "Express.js", "NoSQL"],
-      details: "Plateforme de gestion de collection de jeux vidéo avec base de données NoSQL."
-    },
-    {
-      id: 5,
-      title: "Application de Gestion d'Entreprise",
-      subtitle: "Solution pour PME (hôtels, restaurants, magasins)",
-      brief: "Application permettant aux petites entreprises de gérer leurs activités : enregistrement des clients, paiements, disponibilité des tables/chambres, suivi des revenus et gestion complète de la base de données.",
-      tools: ["C#", ".NET", "Microsoft SQL Server"],
-      details: "Solution complète de gestion d'entreprise avec tableau de bord analytique et gestion en temps réel."
-    }
-  ];
+  // Preview of real projects (see src/data/projectsData.js for full details)
+  const projectsData = projectsSourceData.map(({ id, title, subtitle, brief, tools }) => ({
+    id, title, subtitle, brief, tools
+  }));
 
   return (
     <div className="bg-black text-white">
@@ -79,7 +41,7 @@ const Home = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
-                  <span>Développeur Full Stack</span>
+                  <span>Développeur</span>
                 </div>
                 
                 <div className="info-icon">
@@ -88,14 +50,16 @@ const Home = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <span>Étudiant BUT Informatique</span>
+                  <span>En recherche d'alternance - Rentrée 2026</span>
                 </div>
               </div>
 
               <p className="mt-8 text-gray-300 text-lg leading-relaxed">
-                En tant que développeur passionné basé au Puy-en-Velay, j'apporte précision et innovation créative 
-                à chaque projet. Je me spécialise dans la création d'applications web robustes et évolutives qui 
-                combinent des technologies de pointe avec des expériences utilisateur intuitives.
+                Développeur issu d'un BUT Informatique, orienté back-end et données. Je conçois des back-ends
+                structurés en couches avec API REST, et je maîtrise le SQL, de la modélisation des schémas à
+                l'extraction, la transformation et l'agrégation de données sur plusieurs SGBD. J'accompagne
+                systématiquement mon travail de tests, de contrôles et d'une documentation permettant à un tiers
+                de le reprendre.
               </p>
               
               <div className="mt-10 flex flex-wrap gap-4">
@@ -120,11 +84,26 @@ const Home = () => {
                 
                 {/* Programming Languages & Technologies */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold mb-6 text-primary-400">Langages & Technologies</h3>
+                  <h3 className="text-lg font-semibold mb-6 text-primary-400">Back-end</h3>
                   <div className="skills-grid">
-                    {/* JavaScript */}
+                    {/* Node.js */}
+                    <div className="skill-icon bg-green-600 text-white">
+                      <SiNodedotjs className="w-6 h-6" />
+                    </div>
+                    
+                    {/* Python */}
                     <div className="skill-icon bg-yellow-500 text-black">
-                      <SiJavascript className="w-6 h-6" />
+                      <SiPython className="w-6 h-6" />
+                    </div>
+
+                    {/* Java */}
+                    <div className="skill-icon bg-red-600 text-white font-bold text-xs">
+                      Java
+                    </div>
+
+                    {/* C# */}
+                    <div className="skill-icon bg-purple-600 text-white font-bold">
+                      C#
                     </div>
                     
                     {/* PHP */}
@@ -137,34 +116,14 @@ const Home = () => {
                       <SiSymfony className="w-6 h-6" />
                     </div>
                     
-                    {/* Node.js */}
-                    <div className="skill-icon bg-green-600 text-white">
-                      <SiNodedotjs className="w-6 h-6" />
-                    </div>
-                    
-                    {/* C# */}
-                    <div className="skill-icon bg-purple-600 text-white font-bold">
-                      C#
-                    </div>
-                    
-                    {/* .NET */}
-                    <div className="skill-icon bg-blue-600 text-white">
-                      <SiDotnet className="w-6 h-6" />
-                    </div>
-                    
-                    {/* C++ */}
-                    <div className="skill-icon bg-blue-500 text-white font-bold text-xs">
-                      C++
-                    </div>
-                    
-                    {/* Qt */}
-                    <div className="skill-icon bg-green-400 text-black font-bold">
-                      Qt
-                    </div>
-                    
                     {/* Git */}
                     <div className="skill-icon bg-orange-500 text-white">
                       <SiGit className="w-6 h-6" />
+                    </div>
+
+                    {/* Docker */}
+                    <div className="skill-icon bg-blue-500 text-white">
+                      <SiDocker className="w-6 h-6" />
                     </div>
                   </div>
                 </div>
@@ -173,6 +132,11 @@ const Home = () => {
                 <div className="mb-8">
                   <h3 className="text-lg font-semibold mb-6 text-primary-400">Bases de Données</h3>
                   <div className="skills-grid">
+                    {/* PostgreSQL */}
+                    <div className="skill-icon bg-blue-700 text-white">
+                      <SiPostgresql className="w-6 h-6" />
+                    </div>
+
                     {/* MySQL */}
                     <div className="skill-icon bg-blue-500 text-white">
                       <SiMysql className="w-6 h-6" />
@@ -197,19 +161,19 @@ const Home = () => {
 
                 {/* Services */}
                 <div>
-                  <h3 className="text-lg font-semibold mb-6 text-primary-400">Services</h3>
+                  <h3 className="text-lg font-semibold mb-6 text-primary-400">Données & Qualité</h3>
                   <div className="service-list space-y-3">
                     <div className="service-item">
                       <svg className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                      <span>Développement Full Stack Applications</span>
+                      <span>Modélisation & requêtage SQL</span>
                     </div>
                     <div className="service-item">
                       <svg className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
-                      <span>Développement Full Stack Web</span>
+                      <span>Tests, recette & documentation</span>
                     </div>
                   </div>
                 </div>
@@ -301,7 +265,7 @@ const Home = () => {
               >
                 <div className="timeline-point-small"></div>
                 <div className={`text-2xl font-bold mb-2 ${index % 3 === 0 ? 'year-color-1' : index % 3 === 1 ? 'year-color-2' : 'year-color-3'}`}>
-                  Projet {project.id}
+                  Projet
                 </div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-300 mb-4">{project.subtitle}</p>
@@ -348,7 +312,7 @@ const Home = () => {
             Vous pouvez me contacter via mes réseaux sociaux ou consulter mon GitHub pour voir mes projets.
           </p>
           <div className="flex justify-center space-x-6 mb-8">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/Inaithien" target="_blank" rel="noopener noreferrer" 
                className="bg-gray-800 p-3 rounded-full hover:bg-primary-600 transition duration-300 border border-gray-700">
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
