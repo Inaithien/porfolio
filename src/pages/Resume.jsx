@@ -156,7 +156,7 @@ const Resume = () => {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen">
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Header */}
@@ -190,9 +190,9 @@ const Resume = () => {
           </div>
           
           {/* Resume Content */}
-          <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden border border-gray-800">
+          <div className="rounded-lg overflow-hidden">
             {/* Personal Info Section */}
-            <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-8">
+            <div className="text-white p-8">
               <div className="flex flex-col md:flex-row md:items-center">
                 <div className="mb-6 md:mb-0 md:mr-8">
                   <img 

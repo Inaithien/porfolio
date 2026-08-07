@@ -5,7 +5,7 @@
 
 :root {
   --bg-dark: #000000; /* Pure black background */
-  --bg-card: #000000; /* Changed to pure black instead of dark gray */
+  --bg-card: rgba(17, 24, 39, 0.55); /* Semi-transparent so the starfield shows through */
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
   --accent-color: #f97316; /* Orange */
@@ -23,11 +23,11 @@ body {
 }
 
 .dark-card {
-  background-color: var(--bg-card);
+  background-color: transparent;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   border: none;
   outline: none;
+  padding: 1.5rem;
 }
 
 /* Updated timeline styles for alternating layout */
@@ -158,6 +158,43 @@ body {
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+/* Comet-trail shine effect: a soft streak of light sweeps across the
+   element on hover, like a comet passing by. Apply alongside a
+   `relative overflow-hidden` element (rounded corners are respected). */
+.comet-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.comet-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.7s ease;
+  pointer-events: none;
+}
+
+.comet-shine:hover::after {
+  left: 125%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comet-shine::after {
+    display: none;
+  }
+}
+
 
 .scroll-reveal.visible {
   opacity: 1;

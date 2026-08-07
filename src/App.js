@@ -5,6 +5,7 @@ import './App.css';
 // Import components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import StarField from './components/StarField';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -16,7 +17,8 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <StarField />
+      <div className="relative z-10 flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
           <Routes>

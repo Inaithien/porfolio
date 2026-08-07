@@ -15,7 +15,7 @@ const Projects = () => {
     : projectsData.filter(project => project.tools.includes(filter));
   
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen">
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           <h1 className="text-4xl font-bold text-center mb-4">Mes Projets</h1>

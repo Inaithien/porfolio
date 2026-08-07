@@ -72,7 +72,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen">
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Header Section */}
@@ -82,7 +82,7 @@ const About = () => {
                 <img 
                   src={profileImage} 
                   alt="NGUYEN Thien Huy" 
-                  className="rounded-lg shadow-lg w-full max-w-sm object-cover border border-gray-800"
+                  className="rounded-lg shadow-lg w-full max-w-sm object-cover"
                 />
               </div>
               <div className="md:w-2/3">
@@ -129,7 +129,7 @@ const About = () => {
           {/* Education Section */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8 text-primary-400">Parcours académique</h2>
-            <div className="bg-gray-900 p-8 rounded-lg shadow-lg border border-gray-800">
+            <div className="p-8 rounded-lg shadow-lg">
               <div className="space-y-8">
                 {education.map((edu, index) => (
                   <div key={index} className="flex">
@@ -164,7 +164,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-8 text-primary-400">Compétences</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Technical Skills */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-800">
+              <div className="p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4 text-primary-600">Compétences Techniques</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.technical.map((skill, index) => (
@@ -179,7 +179,7 @@ const About = () => {
               </div>
               
               {/* Transversal Skills */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-800">
+              <div className="p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4 text-primary-600">Compétences Transversales</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.transversal.map((skill, index) => (
@@ -194,7 +194,7 @@ const About = () => {
               </div>
               
               {/* Human Skills */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-800">
+              <div className="p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-bold mb-4 text-primary-600">Qualités Humaines</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.human.map((skill, index) => (
@@ -215,7 +215,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-8 text-primary-400">Projet Professionnel</h2>
             <div className="space-y-8">
               {careerGoals.map((goal, index) => (
-                <div key={index} className="bg-gray-900 p-8 rounded-lg shadow-lg border border-gray-800">
+                <div key={index} className="p-8 rounded-lg shadow-lg">
                   <h3 className="text-xl font-bold mb-4 text-primary-400">{goal.title}</h3>
                   <p className="text-gray-300 mb-6">{goal.description}</p>
                   
@@ -238,14 +238,14 @@ const About = () => {
           {/* Projects Preview Section */}
           <section>
             <h2 className="text-3xl font-bold mb-8 text-primary-400">Découvrir mes projets</h2>
-            <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-8 rounded-lg shadow-lg text-center">
+            <div className="text-white p-8 rounded-lg text-center">
               <h3 className="text-2xl font-bold mb-4">Envie d'en savoir plus sur mes réalisations ?</h3>
-              <p className="text-lg mb-8 text-gray-100">
+              <p className="text-lg mb-8 text-gray-300">
                 Explorez mes projets pour découvrir mon approche, ma méthodologie et mes compétences en action.
               </p>
               <Link 
                 to="/projets" 
-                className="bg-white text-primary-700 py-3 px-8 rounded-full font-medium hover:bg-gray-100 transition duration-300 inline-block"
+                className="border-2 border-primary-500 text-primary-500 py-3 px-8 rounded-full font-medium hover:bg-primary-500 hover:text-white transition duration-300 inline-block"
               >
                 Voir mes projets
               </Link>

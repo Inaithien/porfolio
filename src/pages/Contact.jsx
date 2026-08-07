@@ -88,7 +88,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen">
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Header */}
@@ -104,7 +104,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Contact Information */}
             <div className="md:col-span-1">
-              <div className="bg-gray-900 rounded-lg shadow-lg p-8 h-full border border-gray-800">
+              <div className="rounded-lg shadow-lg p-8 h-full">
                 <h2 className="text-2xl font-bold mb-6 text-primary-400">Informations de contact</h2>
                 
                 <div className="space-y-6">
@@ -168,7 +168,7 @@ const Contact = () => {
             
             {/* Contact Form */}
             <div className="md:col-span-2">
-              <div className="bg-gray-900 rounded-lg shadow-lg p-8 border border-gray-800">
+              <div className="rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl font-bold mb-6 text-primary-400">Envoyez-moi un message</h2>
                 
                 {formStatus.submitted ? (
@@ -251,20 +251,20 @@ const Contact = () => {
           
           {/* Additional Information Section */}
           <div className="mt-16">
-            <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-8 rounded-lg text-center">
+            <div className="p-8 rounded-lg text-center">
               <h2 className="text-2xl font-bold mb-4 text-white">Discutons de votre projet</h2>
-              <p className="text-lg mb-6 text-gray-100 max-w-3xl mx-auto">
+              <p className="text-lg mb-6 text-gray-300 max-w-3xl mx-auto">
                 Que vous ayez une idée de projet, une opportunité d'alternance, ou simplement l'envie d'échanger 
                 sur le développement web et les technologies, je serais ravi de vous répondre rapidement.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <span className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium">
+                <span className="border border-primary-500 text-primary-400 px-4 py-2 rounded-full text-sm font-medium">
                   Projets Web
                 </span>
-                <span className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium">
+                <span className="border border-primary-500 text-primary-400 px-4 py-2 rounded-full text-sm font-medium">
                   Opportunités d'Alternance
                 </span>
-                <span className="bg-white bg-opacity-20 text-white px-4 py-2 rounded-full text-sm font-medium">
+                <span className="border border-primary-500 text-primary-400 px-4 py-2 rounded-full text-sm font-medium">
                   Collaborations
                 </span>
                 

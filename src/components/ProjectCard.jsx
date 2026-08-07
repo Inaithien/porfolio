@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-800 flex flex-col">
+    <div className="comet-shine rounded-lg overflow-hidden transition-transform duration-300 hover:-translate-y-1 flex flex-col">
       <img 
         src={project.image} 
         alt={project.title} 

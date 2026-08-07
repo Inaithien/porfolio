@@ -14,9 +14,9 @@ const Home = () => {
   }));
 
   return (
-    <div className="bg-black text-white">
+    <div className="text-white">
       {/* Modern Hero Section */}
-      <section className="hero-section bg-black text-white pt-32 pb-16">
+      <section className="hero-section text-white pt-32 pb-16">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -65,13 +65,13 @@ const Home = () => {
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link 
                   to="/projects" 
-                  className="bg-primary-600 text-white py-3 px-8 rounded-full hover:bg-primary-700 transition duration-300 font-semibold"
+                  className="comet-shine bg-primary-600 text-white py-3 px-8 rounded-full hover:bg-primary-700 transition duration-300 font-semibold"
                 >
                   Mes Projets
                 </Link>
                 <Link 
                   to="/contact" 
-                  className="bg-transparent border-2 border-primary-500 text-primary-500 py-3 px-8 rounded-full hover:bg-primary-500 hover:text-white transition duration-300 font-semibold"
+                  className="comet-shine bg-transparent border-2 border-primary-500 text-primary-500 py-3 px-8 rounded-full hover:bg-primary-500 hover:text-white transition duration-300 font-semibold"
                 >
                   Me Contacter
                 </Link>
@@ -183,8 +183,8 @@ const Home = () => {
         </div>
       </section>
       
-      {/* Timeline Education Section - Changed from bg-gray-900 to bg-black */}
-      <section className="py-20 bg-black">
+      {/* Timeline Education Section */}
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-16">Mon Parcours</h2>
           
@@ -251,7 +251,7 @@ const Home = () => {
       </section>
       
       {/* Projects Timeline Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-16">Projets Récents</h2>
           
@@ -305,7 +305,7 @@ const Home = () => {
       </section>
 
       {/* Updated Footer - Pure Black Theme */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Intéressé par mon profil ?</h2>
           <p className="text-xl mb-8 text-gray-300">

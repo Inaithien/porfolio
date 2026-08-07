@@ -21,7 +21,7 @@ const ProjectDetail = () => {
   
   if (loading) {
     return (
-      <div className="bg-black text-white min-h-screen">
+      <div className="text-white min-h-screen">
         <div className="pt-24 pb-16 flex justify-center items-center min-h-screen">
           <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-primary-600"></div>
         </div>
@@ -31,7 +31,7 @@ const ProjectDetail = () => {
   
   if (!project) {
     return (
-      <div className="bg-black text-white min-h-screen">
+      <div className="text-white min-h-screen">
         <div className="pt-24 pb-16 container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Projet non trouvé</h2>
           <p className="text-gray-300 mb-8">Le projet que vous recherchez n'existe pas ou a été supprimé.</p>
@@ -47,7 +47,7 @@ const ProjectDetail = () => {
   }
   
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="text-white min-h-screen">
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-6">
           {/* Project Header */}
@@ -86,11 +86,11 @@ const ProjectDetail = () => {
           <div className="mb-10">
             <h3 className="text-2xl font-bold mb-6 text-primary-400">Situation</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <div className="p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-white">Contexte</h4>
                 <p className="text-gray-300">{project.context}</p>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <div className="p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-white">Description</h4>
                 <p className="text-gray-300">{project.description}</p>
               </div>
@@ -101,7 +101,7 @@ const ProjectDetail = () => {
           <div className="mb-10">
             <h3 className="text-2xl font-bold mb-6 text-primary-400">Logique du Projet</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <div className="p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-white">Objectifs</h4>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
                   {project.objectives?.map((objective, index) => (
@@ -109,7 +109,7 @@ const ProjectDetail = () => {
                   ))}
                 </ul>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <div className="p-6 rounded-lg">
                 <h4 className="text-lg font-semibold mb-3 text-white">Missions</h4>
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
                   {project.missions?.map((mission, index) => (
@@ -121,7 +121,7 @@ const ProjectDetail = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Déroulement</h4>
             <div className="space-y-6">
               {project.steps?.map((step, index) => (
-                <div key={index} className="flex bg-gray-900 p-6 rounded-lg border border-gray-800">
+                <div key={index} className="flex p-6 rounded-lg">
                   <div className="flex-shrink-0 mr-4">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary-600 text-white">
                       {index + 1}
@@ -137,7 +137,7 @@ const ProjectDetail = () => {
           </div>
           
           {/* Tech Stack */}
-          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="mb-10 p-6 rounded-lg">
             <h3 className="text-2xl font-bold mb-4 text-primary-400">Stack Technique</h3>
             <div className="flex flex-wrap gap-2">
               {[...new Set([...(project.tools || []), ...(project.skills?.technical || [])])].map((tech, index) => (
@@ -155,7 +155,7 @@ const ProjectDetail = () => {
           <div className="mb-10">
             <h3 className="text-2xl font-bold mb-6 text-primary-400">Compétences Développées</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
+              <div className="p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-bold mb-4 text-primary-600">Compétences Transversales</h4>
                 <ul className="space-y-2">
                   {project.skills?.transversal.map((skill, index) => (
@@ -169,7 +169,7 @@ const ProjectDetail = () => {
                 </ul>
               </div>
               
-              <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
+              <div className="p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-bold mb-4 text-primary-600">Qualités Humaines</h4>
                 <ul className="space-y-2">
                   {project.skills?.human.map((skill, index) => (
@@ -202,14 +202,14 @@ const ProjectDetail = () => {
                   key={index} 
                   src={image} 
                   alt={`${project.title} - Illustration ${index + 1}`} 
-                  className="rounded-lg shadow-md w-full h-32 object-cover border border-gray-800"
+                  className="rounded-lg shadow-md w-full h-32 object-cover"
                 />
               ))}
             </div>
           </div>
           
           {/* Academic Resources */}
-          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="mb-10 p-6 rounded-lg">
             <h3 className="text-2xl font-bold mb-4 text-primary-400">Ressources Académiques</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               {project.academicResources?.map((resource, index) => (
@@ -219,7 +219,7 @@ const ProjectDetail = () => {
           </div>
           
           {/* Conclusion */}
-          <div className="mb-10 bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="mb-10 p-6 rounded-lg">
             <h3 className="text-2xl font-bold mb-4 text-primary-400">Conclusion</h3>
             <p className="text-gray-300">{project.conclusion}</p>
           </div>
